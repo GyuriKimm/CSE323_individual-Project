@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link href="./quiz.css" rel="stylesheet" />
+  </head>
+  <body>
+    </script>
+    <!--Your HTML here-->
+    <div class="wrapper">
+      <h2><p style="font-family: Papyrus;">Do you know the capital of this country?</p></h2>
+      <table id="table">
+        <tr style="text-align: left;">
+        <th>Country</th>
+        <th>Capital</th>
+        <th>Answer</th>
+        </tr>
+        <tr>
+          <td id="quiz-question"></td>
+          <td><input type="text" id="quiz-answer"></td>
+          <td><input type="button" value = "See Answer" id="quiz-submit" onclick="update()"></td>
+        </tr>
+        <tr>
+          <td colspan="3">
+          <input type="radio" name = "type" checked id="All" onclick="types(this.id)">All
+          <input type="radio" name = "type"  id="correct" onclick="types(this.id)">Correct Only
+          <input type="radio" name = "type" id="wrong" onclick="types(this.id)">Wrong Only
+          <br>
+          <input type="button" value = "Clear" id = "quiz-clear" onclick="clear_table()">
+          </td>
+        </tr>
+    </table>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyA96nRnBX8MhgS_duNDbZcrHRoH1BDV2Wg",
+        authDomain: "cse323hw3-27a39.firebaseapp.com",
+        databaseURL: "https://cse323hw3-27a39-default-rtdb.firebaseio.com",
+        projectId: "cse323hw3-27a39",
+        storageBucket: "cse323hw3-27a39.appspot.com",
+        messagingSenderId: "821231903671",
+        appId: "1:821231903671:web:570b2d1d7024db62d23e32",
+        measurementId: "G-4ET8RC9JHT"
+    };
+    firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="./quiz.js"></script>
+  </body>
+</html>

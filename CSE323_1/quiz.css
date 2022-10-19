@@ -1,0 +1,26 @@
+body {
+    background-color: #eee;
+}
+
+/*your code here*/
+.wrapper {
+ width: 560px;
+ margin-left: auto;
+ margin-right: auto;
+}
+.correct {
+    color: blue;
+}
+.incorrect {
+    color: red;
+}
+th{
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+table, td{
+    border-bottom: 1px solid #cdcdcd;
+    border-collapse: collapse;
+    padding: 5px;
+}

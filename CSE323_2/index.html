@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link href="./quiz.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--Your HTML here-->
+    <div class="wrapper">
+      <h2><p style="font-family: Papyrus;">Do you know the capital of this country?</p></h2>
+      <table id="table">
+        <tr style="text-align: left;">
+        <th>Country</th>
+        <th>Capital</th>
+        <th>Answer</th>
+        </tr>
+        <tr>
+          <td id="quiz-question"></td>
+          <td><input type="text" id="quiz-answer"></td>
+          <td><input type="button" value = "See Answer" id="quiz-submit" onclick="update()"></td>
+        </tr>
+        <tr>
+          <td colspan="3">
+          <input type="radio" name = "type" checked id="All" onclick="types(this.id)">All
+          <input type="radio" name = "type"  id="correct" onclick="types(this.id)">Correct Only
+          <input type="radio" name = "type" id="wrong" onclick="types(this.id)">Wrong Only
+        </td>
+        </tr>
+    </table>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="./country_capital_pairs.js"> </script>
+    <script src="./quiz.js"></script>
+  </body>
+</html>
